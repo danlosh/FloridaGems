@@ -27,9 +27,16 @@
 		5145FBCC28B44F9100B4047A /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBCB28B44F9100B4047A /* SearchResultsViewController.swift */; };
 		5145FBCE28B44FD100B4047A /* PostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBCD28B44FD100B4047A /* PostEditViewController.swift */; };
 		5145FBD028B44FED00B4047A /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBCF28B44FED00B4047A /* PublishPostViewController.swift */; };
+		5145FBD228B46FB200B4047A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5145FBD128B46FB200B4047A /* GoogleService-Info.plist */; };
+		5145FBD528B477BB00B4047A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD428B477BB00B4047A /* DatabaseManager.swift */; };
+		5145FBD728B478C900B4047A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD628B478C900B4047A /* AuthManager.swift */; };
+		5145FBD928B4791E00B4047A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD828B4791E00B4047A /* StorageManager.swift */; };
+		53F637234580B5D48C3544CD /* Pods_FloridaGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335410BD2D0A80218BE806A /* Pods_FloridaGems.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03E8E206961E4FA016BEF384 /* Pods-FloridaGems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloridaGems.debug.xcconfig"; path = "Target Support Files/Pods-FloridaGems/Pods-FloridaGems.debug.xcconfig"; sourceTree = "<group>"; };
+		2335410BD2D0A80218BE806A /* Pods_FloridaGems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloridaGems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5145FB9628B4444900B4047A /* FloridaGems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloridaGems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5145FB9928B4444900B4047A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5145FB9B28B4444900B4047A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,10 +55,15 @@
 		5145FBC328B44F1C00B4047A /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		5145FBC528B44F3F00B4047A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5145FBC728B44F5D00B4047A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		5145FBC928B44F7F00B4047A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Onboarding/SearchViewController.swift; sourceTree = "<group>"; };
+		5145FBC928B44F7F00B4047A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5145FBCB28B44F9100B4047A /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		5145FBCD28B44FD100B4047A /* PostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditViewController.swift; sourceTree = "<group>"; };
 		5145FBCF28B44FED00B4047A /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		5145FBD128B46FB200B4047A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5145FBD428B477BB00B4047A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5145FBD628B478C900B4047A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		5145FBD828B4791E00B4047A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		6CC79294363AF5AFFF6802DA /* Pods-FloridaGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloridaGems.release.xcconfig"; path = "Target Support Files/Pods-FloridaGems/Pods-FloridaGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F637234580B5D48C3544CD /* Pods_FloridaGems.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,8 @@
 			children = (
 				5145FB9828B4444900B4047A /* FloridaGems */,
 				5145FB9728B4444900B4047A /* Products */,
+				F6A81F30D6EA039E0E3485AD /* Pods */,
+				8BFDD767703168F9F83174DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +136,12 @@
 		5145FBB028B44B3300B4047A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5145FBD128B46FB200B4047A /* GoogleService-Info.plist */,
 				5145FB9928B4444900B4047A /* AppDelegate.swift */,
 				5145FB9B28B4444900B4047A /* SceneDelegate.swift */,
+				5145FBD428B477BB00B4047A /* DatabaseManager.swift */,
+				5145FBD628B478C900B4047A /* AuthManager.swift */,
+				5145FBD828B4791E00B4047A /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,14 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5145FBBC28B44DAE00B4047A /* Onboarding */,
-				5145FBC128B44EF000B4047A /* PostViewController.swift */,
-				5145FBC328B44F1C00B4047A /* EditViewController.swift */,
-				5145FBC528B44F3F00B4047A /* SettingsViewController.swift */,
-				5145FBC728B44F5D00B4047A /* ListViewController.swift */,
-				5145FBC928B44F7F00B4047A /* SearchViewController.swift */,
-				5145FBCB28B44F9100B4047A /* SearchResultsViewController.swift */,
-				5145FBCD28B44FD100B4047A /* PostEditViewController.swift */,
-				5145FBCF28B44FED00B4047A /* PublishPostViewController.swift */,
+				5145FBD328B476D700B4047A /* General */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -173,6 +185,38 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		5145FBD328B476D700B4047A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5145FBC128B44EF000B4047A /* PostViewController.swift */,
+				5145FBC328B44F1C00B4047A /* EditViewController.swift */,
+				5145FBC528B44F3F00B4047A /* SettingsViewController.swift */,
+				5145FBC728B44F5D00B4047A /* ListViewController.swift */,
+				5145FBC928B44F7F00B4047A /* SearchViewController.swift */,
+				5145FBCB28B44F9100B4047A /* SearchResultsViewController.swift */,
+				5145FBCD28B44FD100B4047A /* PostEditViewController.swift */,
+				5145FBCF28B44FED00B4047A /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		8BFDD767703168F9F83174DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2335410BD2D0A80218BE806A /* Pods_FloridaGems.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A81F30D6EA039E0E3485AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03E8E206961E4FA016BEF384 /* Pods-FloridaGems.debug.xcconfig */,
+				6CC79294363AF5AFFF6802DA /* Pods-FloridaGems.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5145FBAA28B4444B00B4047A /* Build configuration list for PBXNativeTarget "FloridaGems" */;
 			buildPhases = (
+				36F9FE07A05EE71D6677C4C7 /* [CP] Check Pods Manifest.lock */,
 				5145FB9228B4444900B4047A /* Sources */,
 				5145FB9328B4444900B4047A /* Frameworks */,
 				5145FB9428B4444900B4047A /* Resources */,
+				6EBF546C2C82AE84101CAAE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,12 +278,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				5145FBA628B4444B00B4047A /* LaunchScreen.storyboard in Resources */,
+				5145FBD228B46FB200B4047A /* GoogleService-Info.plist in Resources */,
 				5145FBA328B4444B00B4047A /* Assets.xcassets in Resources */,
 				5145FBA128B4444900B4047A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F9FE07A05EE71D6677C4C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloridaGems-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBF546C2C82AE84101CAAE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloridaGems/Pods-FloridaGems-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloridaGems/Pods-FloridaGems-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FloridaGems/Pods-FloridaGems-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5145FB9228B4444900B4047A /* Sources */ = {
@@ -251,12 +340,15 @@
 				5145FB9E28B4444900B4047A /* HomeViewController.swift in Sources */,
 				5145FBC028B44DE600B4047A /* RegistrationViewController.swift in Sources */,
 				5145FBCC28B44F9100B4047A /* SearchResultsViewController.swift in Sources */,
+				5145FBD928B4791E00B4047A /* StorageManager.swift in Sources */,
 				5145FBC228B44EF000B4047A /* PostViewController.swift in Sources */,
+				5145FBD528B477BB00B4047A /* DatabaseManager.swift in Sources */,
 				5145FBB728B44CFB00B4047A /* NotificationsViewController.swift in Sources */,
 				5145FBBE28B44DC800B4047A /* LoginViewController.swift in Sources */,
 				5145FBB928B44D0500B4047A /* ProfileViewController.swift in Sources */,
 				5145FBCA28B44F7F00B4047A /* SearchViewController.swift in Sources */,
 				5145FB9A28B4444900B4047A /* AppDelegate.swift in Sources */,
+				5145FBD728B478C900B4047A /* AuthManager.swift in Sources */,
 				5145FBC428B44F1C00B4047A /* EditViewController.swift in Sources */,
 				5145FB9C28B4444900B4047A /* SceneDelegate.swift in Sources */,
 				5145FBC828B44F5D00B4047A /* ListViewController.swift in Sources */,
@@ -402,6 +494,7 @@
 		};
 		5145FBAB28B4444B00B4047A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E8E206961E4FA016BEF384 /* Pods-FloridaGems.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,6 +522,7 @@
 		};
 		5145FBAC28B4444B00B4047A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC79294363AF5AFFF6802DA /* Pods-FloridaGems.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

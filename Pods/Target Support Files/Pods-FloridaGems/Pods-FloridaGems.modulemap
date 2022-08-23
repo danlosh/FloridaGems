@@ -1,0 +1,6 @@
+framework module Pods_FloridaGems {
+  umbrella header "Pods-FloridaGems-umbrella.h"
+
+  export *
+  module * { export * }
+}
