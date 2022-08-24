@@ -31,6 +31,7 @@
 		5145FBD528B477BB00B4047A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD428B477BB00B4047A /* DatabaseManager.swift */; };
 		5145FBD728B478C900B4047A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD628B478C900B4047A /* AuthManager.swift */; };
 		5145FBD928B4791E00B4047A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD828B4791E00B4047A /* StorageManager.swift */; };
+		51F84A6028B55118004E0630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F84A5F28B55118004E0630 /* Extensions.swift */; };
 		53F637234580B5D48C3544CD /* Pods_FloridaGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335410BD2D0A80218BE806A /* Pods_FloridaGems.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		5145FBD428B477BB00B4047A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		5145FBD628B478C900B4047A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		5145FBD828B4791E00B4047A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		51F84A5F28B55118004E0630 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6CC79294363AF5AFFF6802DA /* Pods-FloridaGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloridaGems.release.xcconfig"; path = "Target Support Files/Pods-FloridaGems/Pods-FloridaGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				5145FBD428B477BB00B4047A /* DatabaseManager.swift */,
 				5145FBD628B478C900B4047A /* AuthManager.swift */,
 				5145FBD828B4791E00B4047A /* StorageManager.swift */,
+				51F84A5F28B55118004E0630 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				5145FBB728B44CFB00B4047A /* NotificationsViewController.swift in Sources */,
 				5145FBBE28B44DC800B4047A /* LoginViewController.swift in Sources */,
 				5145FBB928B44D0500B4047A /* ProfileViewController.swift in Sources */,
+				51F84A6028B55118004E0630 /* Extensions.swift in Sources */,
 				5145FBCA28B44F7F00B4047A /* SearchViewController.swift in Sources */,
 				5145FB9A28B4444900B4047A /* AppDelegate.swift in Sources */,
 				5145FBD728B478C900B4047A /* AuthManager.swift in Sources */,
@@ -505,8 +509,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,8 +539,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
