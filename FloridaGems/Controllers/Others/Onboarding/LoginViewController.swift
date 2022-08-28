@@ -5,6 +5,8 @@
 //  Created by Daniel Loshkarev on 8/22/22.
 //
 
+
+import SafariServices
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -172,18 +174,53 @@ class LoginViewController: UIViewController {
             return
         }
         
-        // login functionality
         
+        var username: String?
+        var email: String?
+        
+        // login functionality
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            // email
+            email = usernameEmail
+        }
+        else {
+            // username
+            username = usernameEmail
+        }
+        AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
+            DispatchQueue.main.async {
+                if success {
+                    // user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else {
+                    // error occurred
+                    let alert = UIAlertController(title: "Login Error Occurred", message: "Unable to log in.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
         
     }
     @objc private func didTapTermsButton() {
-        
+        guard let url = URL(string: "https://help.instagram.com/581066165581870") else {
+            return
+        }
+                let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
     }
     @objc private func didTapPrivacyButton() {
-        
+        guard let url = URL(string: "https://privacycenter.instagram.com/policy") else {
+            return
+        }
+                let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
     }
     @objc private func didTapCreateAccountButton() {
-        
+        let vc = RegistrationViewController()
+        vc.title = "Create Account"
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
 }
 
