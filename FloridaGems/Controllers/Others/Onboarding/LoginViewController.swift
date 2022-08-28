@@ -5,6 +5,7 @@
 //  Created by Daniel Loshkarev on 8/22/22.
 //
 
+import SafariServices
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -164,39 +165,79 @@ class LoginViewController: UIViewController {
     }
 
     @objc private func didTapLoginButton() {
-        passwordField.resignFirstResponder()
-        usernameEmailField.resignFirstResponder()
-        
-        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
-              let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
-            return
-        }
-        
-        // login functionality
-        
-        
-    }
-    @objc private func didTapTermsButton() {
-        
-    }
-    @objc private func didTapPrivacyButton() {
-        
-    }
-    @objc private func didTapCreateAccountButton() {
-        
-    }
-}
+            passwordField.resignFirstResponder()
+            usernameEmailField.resignFirstResponder()
 
+            guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,
+                let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
+                    return
+            }
 
-extension LoginViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == usernameEmailField {
-            passwordField.becomeFirstResponder()
+            var username: String?
+            var email: String?
+
+            if usernameEmail.contains("@"), usernameEmail.contains(".") {
+                // email
+                email = usernameEmail
+            }
+            else {
+                // username
+                username = usernameEmail
+            }
+
+            AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
+                DispatchQueue.main.async {
+                    if success {
+                        // user logged in
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    else {
+                        // error occurred
+                        let alert = UIAlertController(title: "Log In Error",
+                                                      message: "We were unable to log you in.",
+                                                      preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Dismiss",
+                                                      style: .cancel,
+                                                      handler: nil))
+                        self.present(alert, animated: true)
+                    }
+                }
+            }
         }
-        else if textField == passwordField {
-             didTapLoginButton()
+
+        @objc private func didTapTermsButton() {
+            guard let url = URL(string: "https://help.instagram.com/581066165581870") else {
+                return
+            }
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
         }
-        
-        return true
+
+        @objc private func didTapPrivacyButton() {
+            guard let url = URL(string: "https://help.instagram.com/519522125107875?helpref=page_content") else {
+                return
+            }
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        }
+
+        @objc private func didTapCreateAccountButton() {
+            let vc = RegistrationViewController()
+            vc.title = "Create Account"
+
+            present(UINavigationController(rootViewController: vc), animated: true)
+        }
     }
-}
+
+    extension LoginViewController: UITextFieldDelegate {
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            if textField == usernameEmailField {
+                passwordField.becomeFirstResponder()
+            }
+            else if textField == passwordField {
+                didTapLoginButton()
+            }
+
+            return true
+        }
+    }
