@@ -31,6 +31,10 @@
 		5145FBD528B477BB00B4047A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD428B477BB00B4047A /* DatabaseManager.swift */; };
 		5145FBD728B478C900B4047A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD628B478C900B4047A /* AuthManager.swift */; };
 		5145FBD928B4791E00B4047A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5145FBD828B4791E00B4047A /* StorageManager.swift */; };
+		51923F0828C11438001D1E1D /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51923F0728C11438001D1E1D /* FeedPostTableViewCell.swift */; };
+		51923F0B28C12E96001D1E1D /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51923F0A28C12E96001D1E1D /* FeedPostHeaderTableViewCell.swift */; };
+		51923F0D28C12EAB001D1E1D /* FeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51923F0C28C12EAB001D1E1D /* FeedPostActionsTableViewCell.swift */; };
+		51923F0F28C12EDC001D1E1D /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51923F0E28C12EDC001D1E1D /* FeedPostGeneralTableViewCell.swift */; };
 		51F84A6028B55118004E0630 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F84A5F28B55118004E0630 /* Extensions.swift */; };
 		53F637234580B5D48C3544CD /* Pods_FloridaGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2335410BD2D0A80218BE806A /* Pods_FloridaGems.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +68,10 @@
 		5145FBD428B477BB00B4047A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		5145FBD628B478C900B4047A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		5145FBD828B4791E00B4047A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		51923F0728C11438001D1E1D /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		51923F0A28C12E96001D1E1D /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		51923F0C28C12EAB001D1E1D /* FeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		51923F0E28C12EDC001D1E1D /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		51F84A5F28B55118004E0630 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6CC79294363AF5AFFF6802DA /* Pods-FloridaGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloridaGems.release.xcconfig"; path = "Target Support Files/Pods-FloridaGems/Pods-FloridaGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +130,7 @@
 		5145FBAE28B44B1700B4047A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				51923F0628C1140B001D1E1D /* Cells */,
 				5145FBA228B4444B00B4047A /* Assets.xcassets */,
 				5145FBB128B44B8D00B4047A /* Storyboards */,
 			);
@@ -201,6 +210,25 @@
 				5145FBCF28B44FED00B4047A /* PublishPostViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		51923F0628C1140B001D1E1D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				51923F0928C12E3B001D1E1D /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		51923F0928C12E3B001D1E1D /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				51923F0728C11438001D1E1D /* FeedPostTableViewCell.swift */,
+				51923F0A28C12E96001D1E1D /* FeedPostHeaderTableViewCell.swift */,
+				51923F0C28C12EAB001D1E1D /* FeedPostActionsTableViewCell.swift */,
+				51923F0E28C12EDC001D1E1D /* FeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 		8BFDD767703168F9F83174DE /* Frameworks */ = {
@@ -345,18 +373,22 @@
 				5145FBCC28B44F9100B4047A /* SearchResultsViewController.swift in Sources */,
 				5145FBD928B4791E00B4047A /* StorageManager.swift in Sources */,
 				5145FBC228B44EF000B4047A /* PostViewController.swift in Sources */,
+				51923F0828C11438001D1E1D /* FeedPostTableViewCell.swift in Sources */,
 				5145FBD528B477BB00B4047A /* DatabaseManager.swift in Sources */,
 				5145FBB728B44CFB00B4047A /* NotificationsViewController.swift in Sources */,
 				5145FBBE28B44DC800B4047A /* LoginViewController.swift in Sources */,
 				5145FBB928B44D0500B4047A /* ProfileViewController.swift in Sources */,
 				51F84A6028B55118004E0630 /* Extensions.swift in Sources */,
+				51923F0D28C12EAB001D1E1D /* FeedPostActionsTableViewCell.swift in Sources */,
 				5145FBCA28B44F7F00B4047A /* SearchViewController.swift in Sources */,
 				5145FB9A28B4444900B4047A /* AppDelegate.swift in Sources */,
 				5145FBD728B478C900B4047A /* AuthManager.swift in Sources */,
+				51923F0F28C12EDC001D1E1D /* FeedPostGeneralTableViewCell.swift in Sources */,
 				5145FBC428B44F1C00B4047A /* EditViewController.swift in Sources */,
 				5145FB9C28B4444900B4047A /* SceneDelegate.swift in Sources */,
 				5145FBC828B44F5D00B4047A /* ListViewController.swift in Sources */,
 				5145FBC628B44F3F00B4047A /* SettingsViewController.swift in Sources */,
+				51923F0B28C12E96001D1E1D /* FeedPostHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

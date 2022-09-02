@@ -99,10 +99,16 @@ final class SettingsViewController: UIViewController {
     }
 
     private func didTapInviteFriends() {
+        
         // Show share sheet to invite friends
+        
     }
 
     private func didTapEditProfile() {
+        let vc = EditViewController()
+        vc.title = "Edit Profile"
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
 
     }
 
@@ -139,12 +145,7 @@ final class SettingsViewController: UIViewController {
         
         present(actionsheet, animated: true)
     }
-
-    
 }
-        
-        
-        
         
     extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         func numberOfSections(in tableView: UITableView) -> Int {
